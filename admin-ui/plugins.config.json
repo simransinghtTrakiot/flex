@@ -1,18 +1,6 @@
 [
   {
-    "key": "services",
-    "metadataFile": "./services/plugin-metadata"
-  },
-  {
-    "key": "schema",
-    "metadataFile": "./schema/plugin-metadata"
-  },
-  {
-    "key": "auth-server",
-    "metadataFile": "./auth-server/plugin-metadata"
-  },
-  {
-    "key": "admin",
-    "metadataFile": "./admin/plugin-metadata"
+    "key": "myplugin",
+    "metadataFile": "./myplugin/plugin-metadata"
   }
 ]
