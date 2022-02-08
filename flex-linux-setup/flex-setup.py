@@ -9,8 +9,12 @@ from urllib.parse import urljoin
 jans_setup_dir = '/opt/jans/jans-setup'
 sys.path.append(jans_setup_dir)
 
-if not (os.path.join(jans_setup_dir) and ('/etc/jans/conf/jans.properties')):
+if not (os.path.join(jans_setup_dir) and os.path.join('/etc/jans/conf/jans.properties')):
     print("Please install Jans server then execute this script.")
+    sys.exit()
+
+if not os.path.exists('/opt/jans/jetty/jans-config-api/start.ini')
+    print("Please install Jans Config Api then execute this script.")
     sys.exit()
 
 
