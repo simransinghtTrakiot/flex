@@ -11,6 +11,8 @@ import {
 import ReportCard from './ReportCard'
 import { useTranslation } from 'react-i18next'
 
+import ActiveUsers from '../ActiveUsers/ActiveUsers'
+
 function Reports({ attributes, clients, scopes, scripts, dispatch }) {
   const { t } = useTranslation()
 
@@ -81,7 +83,7 @@ function Reports({ attributes, clients, scopes, scripts, dispatch }) {
 
   return (
     <Container>
-      <Row>
+      {/* <Row>
         <Col lg={3}>
           <ReportCard
             data={clientData}
@@ -122,7 +124,8 @@ function Reports({ attributes, clients, scopes, scripts, dispatch }) {
             downValue={scripts.filter((item) => item.enabled).length}
           />
         </Col>
-      </Row>
+      </Row> */}
+      <ActiveUsers />
     </Container>
   )
 }

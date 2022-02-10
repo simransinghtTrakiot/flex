@@ -150,7 +150,7 @@ const pluginMetadata = {
     { name: 'mappingReducer', reducer: mappingReducer },
   ],
   sagas: [
-    mauSaga(),
+    
     scriptSaga(),
     licenseDetailsSaga(),
     apiRoleSaga(),
